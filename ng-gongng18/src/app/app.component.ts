@@ -15,13 +15,6 @@ import * as gongng18 from '../../projects/gongng18/src/public-api'
 
 import { Gongng18specificComponent } from '../../projects/gongng18specific/src/public-api'
 
-import { TreeComponent } from '@vendored_components/github.com/fullstack-lang/gongtree/ng-github.com-fullstack-lang-gongtree/projects/gongtreespecific/src/public-api'
-import { MaterialTableComponent } from '@vendored_components/github.com/fullstack-lang/gongtable/ng-github.com-fullstack-lang-gongtable/projects/gongtablespecific/src/lib/material-table/material-table.component';
-import { MaterialFormComponent } from '@vendored_components/github.com/fullstack-lang/gongtable/ng-github.com-fullstack-lang-gongtable/projects/gongtablespecific/src/lib/material-form/material-form.component';
-import * as gongtable from '@vendored_components/github.com/fullstack-lang/gongtable/ng-github.com-fullstack-lang-gongtable/projects/gongtable/src/public-api';
-import { PanelComponent } from '@vendored_components/github.com/fullstack-lang/gongdoc/ng-github.com-fullstack-lang-gongdoc/projects/gongdocspecific/src/public-api'
-import { GongsvgDiagrammingComponent } from '@vendored_components/github.com/fullstack-lang/gongsvg/ng-github.com-fullstack-lang-gongsvg/projects/gongsvgspecific/src/lib/gongsvg-diagramming/gongsvg-diagramming'
-
 
 @Component({
   selector: 'app-root',
@@ -36,11 +29,6 @@ import { GongsvgDiagrammingComponent } from '@vendored_components/github.com/ful
     MatIconModule,
 
     AngularSplitModule,
-
-    TreeComponent,
-    MaterialTableComponent,
-    MaterialFormComponent,
-    PanelComponent,
 
     Gongng18specificComponent
 
@@ -63,8 +51,6 @@ export class AppComponent implements OnInit {
 
   StackName = "gongng18"
   StackType = gongng18.StackType
-
-  TableExtraPathEnum = gongtable.TableExtraPathEnum
 
   constructor(
   ) {
