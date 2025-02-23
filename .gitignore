@@ -1,0 +1,5 @@
+go/cmd/gongng18/gongng18
+__debug_bin*
+*.exe
+.DS_Store
+node_modules
