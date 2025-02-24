@@ -15,6 +15,8 @@ import * as gongng18 from '../../projects/gongng18/src/public-api'
 
 import { Gongng18specificComponent } from '../../projects/gongng18specific/src/public-api'
 
+import { GongsvgDiagrammingComponent } from '@vendored_components/github.com/fullstack-lang/gongsvg/ng-github.com-fullstack-lang-gongsvg/projects/gongsvgspecific/src/lib/gongsvg-diagramming/gongsvg-diagramming'
+
 
 @Component({
   selector: 'app-root',
@@ -29,7 +31,7 @@ import { Gongng18specificComponent } from '../../projects/gongng18specific/src/p
     MatIconModule,
 
     AngularSplitModule,
-
+    GongsvgDiagrammingComponent,
     Gongng18specificComponent
 
   ],
