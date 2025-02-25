@@ -26,6 +26,8 @@ github.com/fullstack-lang/gongsvg v0.0.0-20250224021913-be5430160ca3 h1:4THNU6z/
 github.com/fullstack-lang/gongsvg v0.0.0-20250224021913-be5430160ca3/go.mod h1:rB1/GphGJXNpamwc0uEVOJDr4jOdW0QSPvoEAufOeLs=
 github.com/fullstack-lang/gongsvg v0.0.0-20250224022342-238b9645772d h1:mZV628yGwXwFbfm5W5GGdO/K2j3ugqmtozvniIqmIUI=
 github.com/fullstack-lang/gongsvg v0.0.0-20250224022342-238b9645772d/go.mod h1:rB1/GphGJXNpamwc0uEVOJDr4jOdW0QSPvoEAufOeLs=
+github.com/fullstack-lang/gongsvg v0.0.0-20250225031148-1a925139d490 h1:u775sF9uw2z8x7YTXNN8E6qjuznpblgre+yP5Qu2znQ=
+github.com/fullstack-lang/gongsvg v0.0.0-20250225031148-1a925139d490/go.mod h1:rB1/GphGJXNpamwc0uEVOJDr4jOdW0QSPvoEAufOeLs=
 github.com/fullstack-lang/gongtable v0.0.0-20250211024907-6cd6fe50e09c h1:zsKZbXVKZp2SK7G2vdPLWmzkmIia68KIdydj2cWTJic=
 github.com/fullstack-lang/gongtable v0.0.0-20250211024907-6cd6fe50e09c/go.mod h1:9jZD1RHGc6hFUk0KoZJVxYKiiBYahaFrSVIjwcW+P24=
 github.com/fullstack-lang/gongtree v0.0.0-20250211024555-99c014eeb3a0 h1:BXfdO8AwfYD34Riz8h65MyA2PeO51jFBrG+GNhK4MCs=
