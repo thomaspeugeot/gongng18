@@ -11,7 +11,7 @@ describe('Gongng18SpecificComponent', () => {
       imports: [Gongng18SpecificComponent]
     })
     .compileComponents();
-    
+
     fixture = TestBed.createComponent(Gongng18SpecificComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

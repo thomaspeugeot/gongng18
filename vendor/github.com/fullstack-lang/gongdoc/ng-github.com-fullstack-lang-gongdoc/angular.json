@@ -2,7 +2,7 @@
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "newProjectRoot": "projects",
   "projects": {
-    "ng-gongng18": {
+    "ng-github.com-fullstack-lang-gongdoc": {
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:application",
@@ -16,12 +16,12 @@
               "budgets": [
                 {
                   "maximumError": "10mb",
-                  "maximumWarning": "500kB",
+                  "maximumWarning": "500kb",
                   "type": "initial"
                 },
                 {
-                  "maximumError": "4kB",
-                  "maximumWarning": "2kB",
+                  "maximumError": "4kb",
+                  "maximumWarning": "2kb",
                   "type": "anyComponentStyle"
                 }
               ],
@@ -31,14 +31,12 @@
           "defaultConfiguration": "production",
           "options": {
             "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
+              "src/favicon.ico",
+              "src/assets"
             ],
             "browser": "src/main.ts",
             "index": "src/index.html",
-            "outputPath": "dist/ng-gongng18",
+            "outputPath": "dist/ng-github.com-fullstack-lang-gongdoc",
             "polyfills": [
               "zone.js"
             ],
@@ -51,16 +49,19 @@
           }
         },
         "extract-i18n": {
-          "builder": "@angular-devkit/build-angular:extract-i18n"
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "buildTarget": "ng-github.com-fullstack-lang-gongdoc:build"
+          }
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "development": {
-              "buildTarget": "ng-gongng18:build:development"
+              "buildTarget": "ng-github.com-fullstack-lang-gongdoc:build:development"
             },
             "production": {
-              "buildTarget": "ng-gongng18:build:production"
+              "buildTarget": "ng-github.com-fullstack-lang-gongdoc:build:production"
             }
           },
           "defaultConfiguration": "development"
@@ -99,23 +100,23 @@
       },
       "sourceRoot": "src"
     },
-    "gongng18": {
+    "gongdoc": {
       "projectType": "library",
-      "root": "projects/gongng18",
-      "sourceRoot": "projects/gongng18/src",
+      "root": "projects/gongdoc",
+      "sourceRoot": "projects/gongdoc/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "project": "projects/gongng18/ng-package.json"
+            "project": "projects/gongdoc/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/gongng18/tsconfig.lib.prod.json"
+              "tsConfig": "projects/gongdoc/tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/gongng18/tsconfig.lib.json"
+              "tsConfig": "projects/gongdoc/tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -123,7 +124,7 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "tsConfig": "projects/gongng18/tsconfig.spec.json",
+            "tsConfig": "projects/gongdoc/tsconfig.spec.json",
             "polyfills": [
               "zone.js",
               "zone.js/testing"
@@ -132,23 +133,23 @@
         }
       }
     },
-    "gongng18specific": {
+    "gongdocspecific": {
       "projectType": "library",
-      "root": "projects/gongng18specific",
-      "sourceRoot": "projects/gongng18specific/src",
+      "root": "projects/gongdocspecific",
+      "sourceRoot": "projects/gongdocspecific/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "project": "projects/gongng18specific/ng-package.json"
+            "project": "projects/gongdocspecific/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/gongng18specific/tsconfig.lib.prod.json"
+              "tsConfig": "projects/gongdocspecific/tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/gongng18specific/tsconfig.lib.json"
+              "tsConfig": "projects/gongdocspecific/tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -156,7 +157,7 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "tsConfig": "projects/gongng18specific/tsconfig.spec.json",
+            "tsConfig": "projects/gongdocspecific/tsconfig.spec.json",
             "polyfills": [
               "zone.js",
               "zone.js/testing"

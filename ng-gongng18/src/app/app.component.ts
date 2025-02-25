@@ -13,7 +13,7 @@ import { AngularSplitModule } from 'angular-split';
 
 import * as gongng18 from '../../projects/gongng18/src/public-api'
 
-import { Gongng18specificComponent } from '../../projects/gongng18specific/src/public-api'
+import { Gongng18SpecificComponent } from '../../projects/gongng18specific/src/lib/gongng18-specific/gongng18-specific.component'
 
 import { TreeComponent } from '@vendored_components/github.com/fullstack-lang/gongtree/ng-github.com-fullstack-lang-gongtree/projects/gongtreespecific/src/public-api'
 import { MaterialTableComponent } from '@vendored_components/github.com/fullstack-lang/gongtable/ng-github.com-fullstack-lang-gongtable/projects/gongtablespecific/src/lib/material-table/material-table.component';
@@ -42,7 +42,7 @@ import { GongsvgDiagrammingComponent } from '@vendored_components/github.com/ful
     MaterialFormComponent,
     PanelComponent,
 
-    Gongng18specificComponent
+    Gongng18SpecificComponent
 
   ],
 
